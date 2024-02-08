@@ -12,11 +12,22 @@ function App() {
     }, [])
 
   return (
-    <div>
-      <ul>
-       {thread.map((thread) => <li key={thread.id}>{thread.title}</li>)}
-      </ul>
-    </div>
+    <>
+    <header>
+      <div className='parent'>
+        <div className='left'>掲示板</div>
+        <div className='right'><a href=''>スレッドをたてる</a></div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h2>新着スレッド</h2>
+        <ul>
+          {thread.map((thread) => <li key={thread.id}>{thread.title}</li>)}
+        </ul>
+      </div>
+    </main>
+    </>
   );
 }
 
