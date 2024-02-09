@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 function App() {
   const [thread, setThread] = useState([])
 
-    //useEffectについてよく分からない　調べる
     useEffect(() => {
         fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
         .then(res => res.json())
@@ -14,16 +13,16 @@ function App() {
   return (
     <>
     <header>
-      <div className='parent'>
+      <div className='left_a_right'>
         <div className='left'>掲示板</div>
         <div className='right'><a href=''>スレッドをたてる</a></div>
       </div>
     </header>
     <main>
-      <div>
-        <h2>新着スレッド</h2>
+      <div className="center">
         <ul>
-          {thread.map((thread) => <li key={thread.id}>{thread.title}</li>)}
+          <li className="head">新着スレッド</li>
+          {thread.map((thread) => <li key={thread.id}><div className="box">{thread.title}</div></li>)}
         </ul>
       </div>
     </main>

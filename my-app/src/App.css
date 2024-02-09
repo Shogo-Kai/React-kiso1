@@ -1,8 +1,51 @@
+@charset "utf-8";
+
+header {
+    background-color: rgb(99, 231, 180);
+}
+
+.left_a_right {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+header, header a {
+    color: white;
+}
+
+.left {
+    font-size: 30px;
+}
+
+.right {
+    font-size: 18px;
+}
+
+main {
+    background-color: rgb(219, 217, 217);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
 ul {
     list-style: none;
 }
 
-.parent {
-    display: flex;
-    justify-content: space-between;
+.head {
+    font-size: 35px;
+    padding: 30px;
+}
+
+.box {
+    font-size: 21px;
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 3px;
 }
