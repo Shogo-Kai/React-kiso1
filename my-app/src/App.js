@@ -5,9 +5,13 @@ function App() {
   const [thread, setThread] = useState([])
 
     useEffect(() => {
+      try {
         fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
         .then(res => res.json())
         .then(data => {setThread(data)})
+      }catch(error) {
+        alert("APIからデータを取得できませんでした。");
+      }
     }, [])
 
   return (
