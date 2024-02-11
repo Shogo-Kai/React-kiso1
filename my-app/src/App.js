@@ -4,18 +4,18 @@ import { DNA } from 'react-loader-spinner';
 
 
 function App() {
-  const [thread, setThread] = useState([])
-  const [loading, setLoading] =useState(false)
+  const [threads, setThreads] = useState([])
+  const [isLoading, setIsLoading] =useState(true)
 
     useEffect(() => {
 
       try {
 
         setTimeout(() => {
-          fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=86')
+          fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
         .then(res => res.json())
-        .then(data => {setThread(data)})
-        .then(() => setLoading(true))}, 2500);
+        .then(data => {setThreads(data)})
+        .then(() => setIsLoading(false))}, 2500);
 
       }catch(error) {
 
@@ -37,7 +37,7 @@ function App() {
       <div className="center">
         <ul>
           <li className="head">新着スレッド</li>
-          {loading? thread.map((thread) => <li key={thread.id}><div className="box">{thread.title}</div></li>) : <DNA height="800" width="800"/>}
+          {isLoading? <DNA height="800" width="800"/> : threads.map((threads) => <li key={threads.id}><div className="box">{threads.title}</div></li>)}
         </ul>
       </div>
     </main>
