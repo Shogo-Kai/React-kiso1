@@ -12,10 +12,10 @@ function App() {
       try {
 
         setTimeout(() => {
-          fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
+          fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=86')
         .then(res => res.json())
         .then(data => {setThread(data)})
-        .then(() => setLoading(true))}, 5000);
+        .then(() => setLoading(true))}, 2500);
 
       }catch(error) {
 
