@@ -8,12 +8,12 @@ function CreateThread() {
     <header>
       <div className='left_a_right'>
         <div className='left'>掲示板</div>
-        <div className='right'><Link to="/">スレッドをたてる</Link></div>
+        <div className='right'><Link to="/createThread">スレッドをたてる</Link></div>
       </div>
     </header>
     <main>
       <div className="center">
-        <h2 className="head">スレッド新規作成</h2>
+        <p className="head">スレッド新規作成</p>
       </div>
     </main>
     </>
