@@ -17,6 +17,7 @@ function CreateThread() {
     body: JSON.stringify({title :threadTitle})
   };
 
+  /*ボタンクリック時にfetch()メソッドを呼び出す*/
   const threadTitleSubmit = () => {
     try {
       fetch(url, options);
