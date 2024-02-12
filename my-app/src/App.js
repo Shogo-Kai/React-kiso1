@@ -11,11 +11,10 @@ function App() {
 
       try {
 
-        setTimeout(() => {
-          fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
+        fetch('https://railway.bulletinboard.techtrain.dev/threads?offset=0')
         .then(res => res.json())
         .then(data => {setThreads(data)})
-        .then(() => setIsLoading(false))}, 2500);
+        .then(() => setIsLoading(false));
 
       }catch(error) {
 
