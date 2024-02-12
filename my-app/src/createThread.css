@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.left_a_right {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
