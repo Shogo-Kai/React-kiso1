@@ -35,3 +35,28 @@ main {
     font-size: 35px;
     padding: 30px;
 }
+
+.form {
+    text-align: center;
+}
+
+.form input {
+    height: 50px;
+    width: 300px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+.child {
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    height: 35px;
+    width: 90px;
+    font-size: 20px;
+}
