@@ -1,6 +1,7 @@
 import './createThread.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Header from './header';
 
 function CreateThread() {
 
@@ -28,12 +29,7 @@ function CreateThread() {
 
   return (
     <>
-    <header>
-      <div className='left_a_right'>
-        <div className='left'>掲示板</div>
-        <div className='right'><Link to="/createThread">スレッドをたてる</Link></div>
-      </div>
-    </header>
+    <Header />
     <main>
       <div className="center">
         <p className="head">スレッド新規作成</p>

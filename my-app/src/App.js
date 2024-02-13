@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { DNA } from 'react-loader-spinner';
-import { Link } from 'react-router-dom';
+import Header from './header';
 
 function App() {
   const [threads, setThreads] = useState([])
@@ -26,12 +26,7 @@ function App() {
 
   return (
     <>
-    <header>
-      <div className='left_a_right'>
-        <div className='left'>掲示板</div>
-        <div className='right'><Link to="/createThread">スレッドをたてる</Link></div>
-      </div>
-    </header>
+    <Header />
     <main>
       <div className="center">
         <ul>
