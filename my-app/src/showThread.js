@@ -1,9 +1,9 @@
-import './App.css';
+import './showThread.css';
 import { useEffect, useState } from 'react';
 import { DNA } from 'react-loader-spinner';
 import Header from './header';
 
-function App() {
+function ShowThread() {
   const [threads, setThreads] = useState([])
   const [isLoading, setIsLoading] =useState(true)
 
@@ -39,4 +39,4 @@ function App() {
   );
 }
 
-export default App;
+export default ShowThread;
