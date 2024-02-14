@@ -2,6 +2,7 @@ import './createThread.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Header from './header';
+import { toast } from 'react-toastify';
 
 function CreateThread() {
 
@@ -21,9 +22,10 @@ function CreateThread() {
   /*ボタンクリック時にfetch()メソッドを呼び出す*/
   const threadTitleSubmit = () => {
     try {
-      fetch(url, options);
+      fetch(url, options)
+      .then(toast.success("新規にスレッドを作成しました!!"));
     } catch(error) {
-      alert("データを送信できませんでした。");
+      toast.error("データを送信できませんでした。");
     }
   };
 

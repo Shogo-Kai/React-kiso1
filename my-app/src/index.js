@@ -5,10 +5,13 @@ import ShowThread from './showThread';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CreateThread from './createThread';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ToastContainer />
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<ShowThread />} />

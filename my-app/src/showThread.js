@@ -2,6 +2,7 @@ import './showThread.css';
 import { useEffect, useState } from 'react';
 import { DNA } from 'react-loader-spinner';
 import Header from './header';
+import { toast } from 'react-toastify';
 
 function ShowThread() {
   const [threads, setThreads] = useState([])
@@ -18,7 +19,7 @@ function ShowThread() {
 
       }catch(error) {
 
-        alert("APIからデータを取得できませんでした。");
+        toast.error("APIからデータを取得できませんでした。");
 
       }
 
