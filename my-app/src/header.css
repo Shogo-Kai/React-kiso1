@@ -16,8 +16,10 @@ header, header a {
 
 .left {
     font-size: 30px;
+    padding-left: 80px;
 }
 
 .right {
     font-size: 18px;
+    padding-right: 80px;
 }
