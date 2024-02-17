@@ -2,6 +2,7 @@
 
 main {
     background-color: rgb(219, 217, 217);
+    background-image: url("C:\Users\user\React-kiso1\my-app\src\小さな砂浜（夜）.jpg");
 }
 
 .center {
@@ -12,6 +13,7 @@ main {
 .head {
     font-size: 35px;
     padding: 30px;
+    color: white;
 }
 
 .form {
