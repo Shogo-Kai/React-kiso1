@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CreateThread from './createThread';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ShowPost from './showPost';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <Routes>
       <Route path="/" element={<ShowThread />} />
       <Route path="/createThread" element={<CreateThread />} />
+      <Route path="/showPost" element={<ShowPost />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

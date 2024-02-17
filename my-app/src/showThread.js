@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { DNA } from 'react-loader-spinner';
 import Header from './header';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 function ShowThread() {
   const [threads, setThreads] = useState([])
@@ -32,7 +33,7 @@ function ShowThread() {
       <div className="center">
         <ul>
           <li className="head">新着スレッド</li>
-          {isLoading? <DNA height="800" width="800"/> : threads.map((threads) => <li key={threads.id}><div className="box">{threads.title}</div></li>)}
+          {isLoading? <DNA height="800" width="800"/> : threads.map((thread) => <li><Link to='/showPost' state={{id: thread.id , title: thread.title}}><div className="box">{thread.title}</div></Link></li>)}
         </ul>
       </div>
     </main>
