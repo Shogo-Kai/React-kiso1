@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+main {
+    background-color: rgb(219, 217, 217);
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+.head {
+    font-size: 35px;
+    padding: 1px;
+    margin-bottom: 40px;
+}
+
+.box {
+    font-size: 21px;
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    padding: 10px;
+    border: solid white;
+    margin: 13px;
+}
+
+.child textarea {
+    display: block;
+    height: 100px;
+    width: 380px;
+    margin: 100px 0px 40px 150px;
+    border: solid white;
+    font-size: 21px;
+}
+
+.btn {
+    display: block;
+    height: 50px;
+    width: 385px;
+    margin: 50px 0px 40px 150px;
+    background-color: rgba(255, 255, 0, 0.632);
+    border-radius: 5px;
+    border: dashed 1px;
+    box-shadow: 0px 5px rgba(148, 148, 2, 0.427);
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.top {
+    margin: 5px;
+}
